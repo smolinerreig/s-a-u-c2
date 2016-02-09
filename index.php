@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 </head> 
 <body>
-
-<h1>Icono del día, instancia <?php echo $_SERVER["WEBSITE_INSTANCE_ID"]?></h1>
+<p style="text-align: right"><?php echo $_SERVER["WEBSITE_INSTANCE_ID"]?></p>
+<h1>Icono del día, instancia</h1>
 
 <img src="randomicon.php"/>
 
