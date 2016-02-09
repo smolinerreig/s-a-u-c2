@@ -7,18 +7,19 @@
 <head>
 	<meta charset="UTF-8">
 </head> 
-<body>
+<body onload="clearCookie('ARRAffinity')">
 <p style="text-align: right; font-size: 0.8em">Instancia: <?php echo $_SERVER["WEBSITE_INSTANCE_ID"]?></p>
 <h1>Icono del día</h1>
 
 <img src="randomicon.php"/>
 <script type="text/javascript">
-function clearCookie(name, domain, path){
+
+function clearCookie(name){
    var domain = document.domain;
    var path = "/";
    document.cookie = name + "=; expires=Thu, 21 Sep 1979 00:00:01 UTC"+ "; domain=" + domain + "; path=" + path;
 };
-window.onload=clearCookie('ARRAffinity');
+
 </script>
 </body>
 </html>
