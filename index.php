@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php if (isset($_COOKIE['ARRAffinity'])) {
+    unset($_COOKIE['ARRAffinity']);
+    setcookie('ARRAffinity', '', time() - 3600, '/'); // empty value and old timestamp
+} ?>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -9,11 +13,12 @@
 
 <img src="randomicon.php"/>
 <script type="text/javascript">
-	window.onload = function() {
-	  	document.cookie = 'ARRAffinity' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-		console.log(document.cookie);
-	};
-	
+function clearCookie(name, domain, path){
+   var domain = document.domain;
+   var path = "/";
+   document.cookie = name + "=; expires=Thu, 21 Sep 1979 00:00:01 UTC"+ "; domain=" + domain + "; path=" + path;
+};
+window.load(clearCookie);
 </script>
 </body>
 </html>
