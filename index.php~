@@ -1,5 +1,6 @@
-<!DOCTYPE html>
 <?php setcookie("ARRAffinity", "", time() - 3600, "/");?>
+<!DOCTYPE html>
+
 <html>
 <head>
 	<meta charset="UTF-8">
