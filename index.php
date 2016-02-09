@@ -18,7 +18,7 @@ function clearCookie(name, domain, path){
    var path = "/";
    document.cookie = name + "=; expires=Thu, 21 Sep 1979 00:00:01 UTC"+ "; domain=" + domain + "; path=" + path;
 };
-window.onload(clearCookie('ARRAffinity'));
+window.onload=clearCookie('ARRAffinity');
 </script>
 </body>
 </html>
