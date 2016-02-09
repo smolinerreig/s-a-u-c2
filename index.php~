@@ -1,6 +1,4 @@
-<?php setcookie("ARRAffinity", "", time() - 3600, "/");?>
 <!DOCTYPE html>
-
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -10,7 +8,10 @@
 <h1>Icono del día</h1>
 
 <img src="randomicon.php"/>
-
+<script type="text/javascript">
+	document.cookie = 'ARRAffinity' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+	console.log(document.cookie);
+</script>
 </body>
 </html>
 

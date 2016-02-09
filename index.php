@@ -9,8 +9,11 @@
 
 <img src="randomicon.php"/>
 <script type="text/javascript">
-	document.cookie = 'ARRAffinity' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-	console.log(document.cookie);
+	window.onload = function() {
+	  	document.cookie = 'ARRAffinity' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+		console.log(document.cookie);
+	};
+	
 </script>
 </body>
 </html>
